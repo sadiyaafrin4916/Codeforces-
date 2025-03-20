@@ -1,0 +1,152 @@
+Problem A. 
+s = input().strip()  
+print("Hello, " + s)
+
+Problem B.
+i, l, c, f, d = input().split()
+
+
+i = int(i)
+l = int(l)
+c = str(c)
+f = float(f)
+d = float(d)
+
+
+print(i)
+print(l)
+print(c)
+print(f)
+print(d)
+
+Problem C.
+
+X, Y = map(int, input().split())
+
+print(f"{X} + {Y} = {X + Y}")
+print(f"{X} * {Y} = {X * Y}")
+print(f"{X} - {Y} = {X - Y}")
+
+Problem D.
+
+A, B, C, D = map(int, input().split())
+X = (A * B) - (C * D)
+print(f"Difference = {X}")
+
+Problem E.
+
+R = float(input())
+
+pi = 3.141592653
+
+
+area = pi * (R ** 2)
+
+print(f"{area:.9f}")
+
+Problem F.
+
+N, M = map(int, input().split())
+
+last_digit_N = N % 10
+last_digit_M = M % 10
+result = last_digit_N + last_digit_M
+
+print(result)
+
+Problem G.
+
+N = int(input())
+sum_N = (N * (N + 1)) // 2
+
+print(sum_N)
+
+Problem H.
+
+Problem I.
+
+A, B = map(int, input().split())
+
+if A >= B:
+    print("Yes")
+else:
+    print("No")
+
+Problem J.
+
+A, B = map(int, input().split())
+
+if A % B == 0 or B % A == 0:
+    print("Multiples")
+else:
+    print("No Multiples")
+
+Problem K.
+
+A, B, C = map(int, input().split())
+minimum = min(A, B, C)
+maximum = max(A, B, C)
+
+print(minimum, maximum)
+
+Problem L.
+
+F1, S1 = input().split()
+
+F2, S2 = input().split()
+
+if S1 == S2:
+    print("ARE Brothers")
+else:
+    print("NOT")
+
+Problem M.
+
+X = input().strip()
+
+if X.isdigit():
+    print("IS DIGIT")
+
+elif X.isalpha():
+    print("ALPHA")
+    if X.isupper():
+        print("IS CAPITAL")
+    else:
+        print("IS SMALL")
+
+Problem N.
+
+X = input().strip()
+
+if X.islower():
+    print(X.upper())
+else:
+    print(X.lower())
+
+Problem O.
+
+expression = input().strip()
+for op in ['+', '-', '*', '/']:
+    if op in expression:
+        A, B = expression.split(op)  
+        A, B = int(A), int(B) 
+        if op == '+':
+            print(A + B)
+        elif op == '-':
+            print(A - B)
+        elif op == '*':
+            print(A * B)
+        elif op == '/':
+            print(A // B)  
+        break
+
+Problem P.
+
+X = input().strip()
+
+first_digit = int(X[0])
+
+if first_digit % 2 == 0:
+    print("EVEN")
+else:
+    print("ODD")
